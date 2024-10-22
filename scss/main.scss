@@ -1,0 +1,16 @@
+//reset
+@import "./vars";
+@import "./mixins";
+@import  "./reset" ;
+//cabecera 
+@import "./cabecera";
+//principal
+@import "principal";
+//pie
+@import "./pie";
+//mq 
+@import "./mq";
+//tipografias
+@import "./tipografias";
+// animaciones
+@import "./animaciones"

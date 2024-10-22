@@ -1,0 +1,14 @@
+.pie {
+    background-color:$color-terciario;
+    font-family: $general;
+    font-size: xx-large;
+    text-decoration: none;
+   .redes {
+        text-decoration: none;
+        color:$color-principal;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+    }
+}

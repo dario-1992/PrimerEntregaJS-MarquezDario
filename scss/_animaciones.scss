@@ -1,0 +1,35 @@
+.movlogo{
+    transition-duration: 2s;
+    transition-delay: 0;
+}
+.movlogo:hover{
+    transform: translate(300px) ;}
+
+.movinglogo{
+        animation-name: movelogo;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+}
+    @keyframes movelogo{
+        0%{
+            opacity: 0;
+            transform: translateX(-400px); 
+        }
+        25%{
+            opacity: 1;
+            transform: translateX(0px)
+        }
+        50%{
+            opacity: 1;
+            transform: translateX(0px)
+        }
+        75%{
+            opacity: 1;
+            transform: translateX(0px)        
+        }
+        100%{
+            opacity: 0;
+            transform: rotate(180deg) translateX(-1000px); 
+        }
+    }
+ 

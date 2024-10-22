@@ -1,0 +1,176 @@
+/* index */ 
+//main
+.carousel {
+   
+    background-image: url(../assets/fondo.jpg);
+   
+    .principal {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        &:after {
+            display: block;
+            clear: both;
+            content: "";
+        }
+    .color {
+            position: absolute;
+            right: 15%;
+            bottom: 1.25rem;
+            left: 15%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-family: $menu;
+            background-color:$color-secundario;
+            border-radius: 10px ;
+            border-color: $color-secundario;
+            border-width: 4px;
+            border-style: solid;
+          }
+    }
+}
+.fondo {
+    background-image: url(../assets/fondo_principal.jpg);
+}
+//section
+.card-title {
+    font-family: $menu;
+    font-size: xx-large;
+    
+}
+  .card {
+      margin-top: 2rem;
+      font-family: $menu;
+      background-color: $color-txt;
+  }
+  .text-body-secondary {
+      font-family: $general;
+      font-size: xx-large;
+      }
+/* mateamp */ 
+.ampmain {
+    margin-left: 30px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr) ;
+   grid-template-rows: repeat(6,1fr) ;
+   grid-template-areas:  
+  "uno uno tres tres"
+  "uno uno tres tres"
+  "dos dos cuatro cuatro"
+  "dos dos cuatro cuatro"
+  "cinco cinco seis seis"
+  "cinco cinco seis seis"
+   ;
+}
+.uno {
+    grid-area: uno;
+}
+.dos {
+    grid-area: dos;
+}
+.tres {
+    grid-area: tres;
+}
+.cuatro {
+    grid-area: cuatro;
+}
+.cinco {
+    grid-area: cinco;
+}
+.seis {
+    grid-area: seis;
+}
+ /* estilos matepedal*/
+.basepdal {
+        display: flex;
+        justify-content: center;
+    }
+.imgpedal {
+        display: flex;
+        justify-content: end;
+        width: 50rem;
+    }
+// estilos como lo hacemos
+.videos{
+    background-image: url(../assets/filas.jpg);
+    font-family: $menu;
+    display: flex;
+    justify-content:space-evenly;
+}
+.video-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    align-items: center;
+    height: 700px;
+    .v1 {height: 80%;};
+    .txt {
+        display: flex;
+        justify-content: center;
+        color: $color-terciario;
+        background-color: $color-txt;
+        width: 20rem;
+        padding: 15px;
+        border-radius: 10px ;
+        border-color: $color-secundario;
+        border-width: 2px;
+        border-style: solid;
+        font-size:larger;
+        text-align: center;
+    }
+}
+.armado { 
+    margin-top: 30px;
+    font-family: $menu;
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+}
+.img-armado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around ;
+    align-items: center;
+    height: 700px;
+}
+.text {
+    display: flex;
+        justify-content: center;
+        color: $color-terciario;
+        width: 20rem;
+        font-size:larger;
+        text-align: center;
+}
+/*   Comienza preguntas */
+.envianos {
+    background-color: $color-secundario;
+    padding: 10px;
+    border-radius: 10px ;
+        border-color: $color-secundario;
+        border-width: 4px;
+        border-style: solid;
+    color: $color-principal;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.input {
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.captura {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+        width: 100%;
+    }
+}

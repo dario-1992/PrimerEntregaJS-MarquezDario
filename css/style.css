@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container-matezone{    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bg-nav{
+    background-color: #0a0a0a;
+    font-family: "menutxtrg";
+   }
+@font-face {
+    font-family: "mate-zone";
+    src: url("../fuentes/Charlotte\ Southern.ttf");
+}
+@font-face{
+    font-family: "menutxtrg";
+    src: url("../fuentes/kenyan\ coffee\ rg.ttf");
+    }
+@font-face{
+    font-family: "menutxtbd";
+    src: url("../fuentes/kenyan\ coffee\ bd.ttf")
+}
+
+
+ 
+.floatlogo {
+    display: flex;
+    justify-content:end;
+    z-index: 1;
+    position: fixed; left :88%; top: 7%;
+    height: 8rem;
+     }
+
+    
+
+
+.logo {display: flex;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    font-family: "mate-zone";
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    color: #fad201;
+    white-space: nowrap;
+}
+.txtnav {   
+    display: flex;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: row;
+    margin-bottom: 0;
+    list-style: none;
+    color: #f8f8ff;
+}
+@media (min-width: 992px) {
+.navbar-expand-lg .burger {
+    display: none;}
+    
+}
+@media (max-width: 992px) {
+    .txtnav{
+        flex-direction: column;
+        }
+        .floatlogo{
+            display: none;
+        }
+}
+
+.nav-item{
+    padding: 1rem;
+}
+.burger {
+    padding: 0.25rem;
+    font-size: 1.25rem;
+    flex-direction: column;
+    line-height: 1;
+    color: #fad201;
+    background-color: #fad201;
+    border: 3px;
+    border-radius: 0.25rem
+}
+/* Comienza main */
+.carousel {
+    background-color: #191919;
+}
+.principal {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.principal::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.color {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: #fad201;
+    text-align: center;
+    font-family: "menutxtrg";
+    background-color: #191919;
+  }
+  /* Comienza Section*/
+.card-title {
+    font-family: "mate-zone";
+    font-size: xx-large;
+    
+}
+  .card {
+      margin-top: 2rem;
+      font-family: "menutxtbd";
+      background-color: #fad201;
+  }
+  .text-body-secondary {
+      font-family: "menutxtrg";
+      }
+
+/*comienza footer*/
+
+footer {
+    background-color: #0a0a0a;
+    font-family: "mate-zone";
+    font-size: xx-large;
+    text-decoration: none;
+}
+
+.redes {
+    text-decoration: none;
+    color: #fad201;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* estilos mateamp*/
+.ampmain {
+    margin-left: 30px;
+   display: grid;
+   grid-template-columns: repeat(4,1fr) ;
+   grid-template-rows: repeat(6,1fr) ;
+   grid-template-areas:  
+  "uno uno tres tres"
+  "uno uno tres tres"
+  "dos dos cuatro cuatro"
+  "dos dos cuatro cuatro"
+  "cinco cinco seis seis"
+  "cinco cinco seis seis"
+  
+   ;
+
+}
+
+.uno {
+    grid-area: uno;
+}
+.dos {
+    grid-area: dos;
+}
+.tres {
+    grid-area: tres;
+}
+.cuatro {
+    grid-area: cuatro;
+}
+.cinco {
+    grid-area: cinco;
+}
+.seis {
+    grid-area: seis;
+}
+
+
+@media (max-width: 400px) {
+    .ampmain {
+        grid-template-areas: 
+        "uno uno uno uno "
+        "dos dos dos dos"
+        "tres tres tres tres"
+        "cuatro cuatro cuatro cuatro"
+        "cinco cinco cinco cinco "
+        "seis seis seis seis "
+    }
+    }
+    
+    /* estilos matepedal*/
+
+.basepdal {
+    display: flex;
+    justify-content: center;
+}
+    .imgpedal {
+    display: flex;
+    justify-content: end;
+    width: 50rem;
+}

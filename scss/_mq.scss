@@ -1,0 +1,32 @@
+@media (min-width: 992px) {
+    .navbar-expand-lg .burger {
+        display: none;}
+        
+    }
+@media (max-width: 992px) {
+        .txtnav{
+            flex-direction: column;
+            }
+        .floatlogo{
+                display: none;
+            }
+        .movinglogo{
+            display: none;
+        }
+    }
+@media (max-width: 400px) {
+        .ampmain {
+            grid-template-areas: 
+            "uno uno uno uno "
+            "dos dos dos dos"
+            "tres tres tres tres"
+            "cuatro cuatro cuatro cuatro"
+            "cinco cinco cinco cinco "
+            "seis seis seis seis "
+        }
+        }
+@media (max-width: 992px) {
+            .videos{
+                flex-direction: column;
+                }
+        }

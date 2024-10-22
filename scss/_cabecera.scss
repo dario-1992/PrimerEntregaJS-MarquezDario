@@ -1,0 +1,55 @@
+.floatlogo {
+    display: flex;
+    justify-content:end;
+    z-index: 2;
+    position: fixed; left :88%; top: 7%;
+    height: 8rem;
+     }
+.floatlogo2 {
+        display: flex;
+        justify-content:end;
+        z-index: 2;
+        position: fixed; left :88%; top: 28%;
+        height: 10rem;
+         }
+.bg-nav{
+        background-color: $color-terciario;
+        font-family: $menu;
+        .container-matezone{    display: flex;
+            flex-wrap: inherit;
+            align-items: center;
+            justify-content: space-evenly;
+            .logo {display: flex;
+                margin-right: 1rem;
+                margin-left: 1rem;
+                font-family: $general;
+                font-size: 2rem;
+                font-weight: 100;
+                text-decoration: none;
+                color: $color-principal;
+                white-space: nowrap;
+            }
+            .burger {
+                padding: 0.25rem;
+                font-size: 1.25rem;
+                flex-direction: column;
+                line-height: 1;
+                color: $color-principal;
+                background-color: $color-principal;
+                border: 3px;
+                border-radius: 0.25rem
+            }
+        }
+        .nav-item{
+            padding: 1rem;
+        }
+       } 
+.txtnav {   
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        list-style: none;
+        color: $color-txt;
+        @include espacios(1rem, 1rem);
+        font-size:x-large
+    }

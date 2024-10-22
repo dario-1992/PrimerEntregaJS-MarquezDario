@@ -1,0 +1,4 @@
+@mixin espacios($izq, $der){
+    padding-left: $izq;
+    padding-right: $der;
+}

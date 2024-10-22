@@ -1,0 +1,19 @@
+//variables
+$general: "mate-zone";
+$menu: "menutxtrg";
+$submenu: "menutxtbd";
+$color-principal: #fad201;
+$color-secundario: #191919;
+$color-terciario: #0a0a0a ;
+$color-txt: #fff5ee;
+//map
+$colores: (
+    principal: $color-principal,
+    secundario: $color-secundario,
+    terciario: $color-terciario,
+    textos: $color-txt,
+);
+@each $color, $tipo in $colores{
+    .dc-#{$color}{
+        color: $tipo};
+}
