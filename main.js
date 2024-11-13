@@ -1,5 +1,5 @@
 
-class Producto {
+ class Producto {
     constructor(nombre,valor,tipo) {
         this.nombre = nombre
         this.valor = valor
@@ -7,7 +7,7 @@ class Producto {
     }
 }
 
-const mates= []; 
+const mates = []; 
 
 const marshall = new Producto ("Marshall", 15000, "Amplificador")
 const peavey = new Producto("Peavey", 12000, "Amplificador")
@@ -16,7 +16,7 @@ const DD7 = new Producto ("DD7", 12000, "Pedal")
 mates.push(marshall, peavey, DD7);
 
 
-const tazas= []; 
+const tazas = []; 
 
 const distortion = new Producto ("Distortion", 14000, "Pedal")
 const chorus = new Producto ("Chorus", 15500, "Pedal")
@@ -26,7 +26,7 @@ tazas.push(distortion, chorus, DD7t);
 
 
 
-const porta= []; 
+const porta = []; 
 
 const ts9 = new Producto ("TS9", 14000, "Pedal")
 const metalzone = new Producto ("MetalZone", 15500, "Pedal")
@@ -37,7 +37,7 @@ porta.push(ts9, metalzone, marshallp);
 
 
 
-function solicitar() {
+/* function solicitar() {
     let nombre = prompt("Cual es tu nombre?");
     alert("Bienvenido a MateZone: " + nombre);
 }
@@ -90,9 +90,65 @@ else if (modelo == 3) {
 
 console.log(mates)
 console.log(tazas)
-console.log(porta)
+console.log(porta)*/
 
 
 
+/* const preguntas = document.getElementById("pregunta")
 
 
+
+preguntas.addEventListener("submit",(evento) =>{
+    evento.preventDefault();
+    const nombre = document.getElementById("nombre").value
+    const email = document.getElementById("email").value
+    const pregunta = document.getElementById("pregunta").value
+
+    alert(`Gracias, ${nombre} tu pregunta fue enviada, recibiras una respuesta en el e-mail ${email}`)  
+
+})
+
+
+*/
+//carrito
+
+const listaMates = document.getElementById("mates")
+const Carrito = document.getElementById("carrito")
+const Total = document.getElementById("total")
+
+console.log(Total)
+
+
+
+let totalCompra = 0 ;
+
+
+
+    mates.forEach((mate) => {
+        const item = document.createElement("div");
+        item.classList.add("mate")
+
+        item.innerHTML= `
+                <h2> ${mate.nombre} </h2>
+                <p> ${mate.tipo} </p>
+                <p> Precio: $${mate.valor} </p>
+                <button class="agregar-mate"> Agregar al Carro </button>
+                     `
+        const botonAgregarMate = item.querySelector(".agregar-mate")
+        botonAgregarMate.addEventListener("click",() => agregarCarrito(mate))
+
+    listaMates.appendChild(item)
+}
+);
+
+function agregarCarrito(mate) {
+    const itemCarrito = document.createElement("li")
+    itemCarrito.textContent = `
+                       Mate ${mate.nombre} ----> $${mate.valor}
+    `
+    Carrito.appendChild(itemCarrito)
+
+    totalCompra += mate.valor;
+    Total.textContent = `Total : $${totalCompra}`;
+
+}
