@@ -174,3 +174,46 @@
         width: 100%;
     }
 }
+
+
+.tienda {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-wrap: wrap;
+    background-color:  $color-txt;
+    padding: 1rem;
+    .mate {
+        flex-direction: column;
+        padding: 2rem;
+  
+        .agregar-mate{
+            padding: 0.8rem;
+            border-radius: 0.3rem;
+            background-color: $color-terciario;
+            color: $color-principal;
+            font-family: $menu;
+            font-size:x-large;
+        }
+    }
+    
+}
+
+.carrito {
+    list-style-type: none;
+    padding: 1rem;
+    font-family: $menu;
+    font-size: xx-large;
+   
+}
+
+.total {
+    background-color: $color-secundario;
+    color: $color-txt;
+    padding: 10rem;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    font-family: $menu;
+    font-size: xxx-large;
+}

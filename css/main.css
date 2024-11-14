@@ -272,6 +272,45 @@
   width: 100%;
 }
 
+.tienda {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  flex-wrap: wrap;
+  background-color: #fff5ee;
+  padding: 1rem;
+}
+.tienda .mate {
+  flex-direction: column;
+  padding: 2rem;
+}
+.tienda .mate .agregar-mate {
+  padding: 0.8rem;
+  border-radius: 0.3rem;
+  background-color: #0a0a0a;
+  color: #fad201;
+  font-family: "menutxtrg";
+  font-size: x-large;
+}
+
+.carrito {
+  list-style-type: none;
+  padding: 1rem;
+  font-family: "menutxtrg";
+  font-size: xx-large;
+}
+
+.total {
+  background-color: #191919;
+  color: #fff5ee;
+  padding: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "menutxtrg";
+  font-size: xxx-large;
+}
+
 .pie {
   background-color: #0a0a0a;
   font-family: "mate-zone";
